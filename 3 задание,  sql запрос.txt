@@ -1,0 +1,11 @@
+база данных shop
+2 таблицы good(продукты) и good_category(категория продуктов)
+в 1 таблице поля: id, category_id, name
+во 2 таблице id, name
+
+запрос будет выглядеть так 
+Select 
+	g.name 'Продукты',
+	c.name 'Категория продуктов'
+From good g
+join good_category c on c.id = g.category.id
